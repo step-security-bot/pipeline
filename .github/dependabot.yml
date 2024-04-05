@@ -57,3 +57,18 @@ updates:
     - "dependencies"
     - "release-note-none"
     - "kind/misc"
+
+  - package-ecosystem: docker
+    directory: /test/gohelloworld
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /vendor/github.com/tektoncd/plumbing
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /vendor/go.opentelemetry.io/otel
+    schedule:
+      interval: daily
